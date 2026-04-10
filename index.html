@@ -1,23 +1,439 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tecnologia para Internet I</title>
+    <title>Nicolas Marrai - Desenvolvedor de Software</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Tecnologia para Internet I</h1>
-    <p>Bem-vindo ao meu site! Aqui tem as atividades sobre HTML</p>
-    <ul>
-      <li>
-        <a href="Exercício 1 Listas/exercício 1 listas.html"
-          >Exercício 1 - Listas</a
-        >
-      </li>
-      <li><a href="Exercício 2 Links/index.html">Exercício 2 - Links</a></li>
-      <li>
-        <a href="Exercício 3 Tabelas/tabelas.html">Exercício 3 - Tabelas</a>
-      </li>
-    </ul>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <h1>Nicolas Marrai</h1>
+          <p class="title">Estudante de Engenharia da Computação</p>
+          <nav class="nav">
+            <ul>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#habilidades">Habilidades</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#trabalho-sala">Trabalho em sala</a></li>
+              <li><a href="#educacao">Educação</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>
+            Desenvolvedor Full Stack apaixonado por criar soluções inovadoras
+          </h2>
+          <p>
+            Estudante de Engenharia da Computação com foco em desenvolvimento
+            web, mobile e aplicações empresariais. Busco constantemente
+            aprimorar minhas habilidades e contribuir para projetos que fazem a
+            diferença.
+          </p>
+          <a href="#projetos" class="btn-primary">Ver meus projetos</a>
+        </div>
+        <div class="hero-image">
+          <div
+            class="avatar-placeholder"
+            aria-label="Avatar com as iniciais NM"
+          >
+            <span>NM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Olá! Sou Nicolas Marrai, estudante de Engenharia da Computação com
+              paixão por tecnologia e inovação. Atualmente estou cursando o 7º
+              período da graduação, onde venho desenvolvendo habilidades em
+              diversas áreas da computação, com ênfase em desenvolvimento de
+              software full stack.
+            </p>
+            <p>
+              Meu interesse por programação começou cedo, e desde então tenho
+              buscado aprender constantemente através de cursos, projetos
+              pessoais e participação em comunidades de desenvolvedores.
+              Acredito que a melhor maneira de aprender é fazendo, por isso
+              dedico boa parte do meu tempo à construção de projetos reais que
+              resolvam problemas concretos.
+            </p>
+            <p>
+              Além do aspecto técnico, valorizo muito o trabalho em equipe,
+              comunicação clara e a busca constante por melhorias. Estou sempre
+              aberto a novos desafios e oportunidades de crescimento
+              profissional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Linguagens de Programação</h3>
+            <ul class="skill-list">
+              <li>JavaScript/TypeScript</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>C/C++</li>
+              <li>HTML5/CSS3</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <ul class="skill-list">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Vue.js</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <ul class="skill-list">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Django</li>
+              <li>Spring Boot</li>
+              <li>RESTful APIs</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Banco de Dados</h3>
+            <ul class="skill-list">
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>SQLite</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Ferramentas e Outros</h3>
+            <ul class="skill-list">
+              <li>Git/GitHub</li>
+              <li>Docker</li>
+              <li>Linux</li>
+              <li>VS Code</li>
+              <li>Metodologias Ágeis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2 class="section-title">Projetos Destacados</h2>
+        <div class="projects-grid">
+          <!-- Projeto 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>TypeScript</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>HealthMed</h3>
+              <p>
+                Plataforma educacional desenvolvida para organização e
+                disponibilização de cursos e conteúdos voltados para a área da
+                saúde.
+              </p>
+              <div class="project-links">
+                <a href="" class="btn-link">Fora do ar</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-tech">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>TailwindCSS</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Cognull</h3>
+              <p>
+                Plataforma/empresa de desenvolvimento de software focada em
+                transformar ideias em soluções digitais
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://cognull.vercel.app/"
+                  target="_blank"
+                  class="btn-link"
+                  >Ver Site</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Weather-app</h3>
+              <p>
+                Aplicação web desenvolvida com HTML e CSS puro, com foco em
+                estruturação semântica, responsividade e organização visual.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://nicolasmarrai.github.io/weather-app/"
+                  target="_blank"
+                  class="btn-link"
+                  >Ver Site</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 4 -->
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-tech">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>TailwindCSS</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Bomba-Lógica</h3>
+              <p>
+                Projeto interativo criado para a ENTEC 2025 (UNIUBE) que simula
+                um golpe de engenharia social (sorteio falso) para demonstrar,
+                na prática, como dados pessoais podem ser capturados.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://bomba-logica-next.vercel.app/"
+                  target="_blank"
+                  class="btn-link"
+                  >Ver Site</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trabalho em sala -->
+    <section id="trabalho-sala" class="section">
+      <div class="container">
+        <h2 class="section-title">Trabalho em sala</h2>
+        <div class="classroom-grid">
+          <article class="classroom-card">
+            <h3>Exercício 1 - Listas</h3>
+            <p>Atividade prática de estruturação de listas em HTML.</p>
+            <a
+              href="Exercício 1 Listas/exercício 1 listas.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-link"
+              >Abrir atividade</a
+            >
+          </article>
+
+          <article class="classroom-card">
+            <h3>Exercício 2 - Links</h3>
+            <p>Exercício focado em navegação e criação de links.</p>
+            <a
+              href="Exercício 2 Links/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-link"
+              >Abrir atividade</a
+            >
+          </article>
+
+          <article class="classroom-card">
+            <h3>Exercício 3 - Tabelas</h3>
+            <p>Atividade com organização de dados usando tabelas HTML.</p>
+            <a
+              href="Exercício 3 Tabelas/tabelas.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-link"
+              >Abrir atividade</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educação -->
+    <section id="educacao" class="section">
+      <div class="container">
+        <h2 class="section-title">Formação Acadêmica</h2>
+        <div class="education-content">
+          <div class="education-item">
+            <h3>Engenharia da Computação - Cursando</h3>
+            <p class="institution">Universidade de Uberaba - UNIUBE</p>
+            <p class="period">2025 - 2027 (Previsão de conclusão)</p>
+            <ul>
+              <li>Foco em desenvolvimento de software e sistemas embarcados</li>
+              <li>Participação ativa em projetos de extensão e pesquisa</li>
+            </ul>
+          </div>
+
+          <div class="education-item">
+            <h3>Cursos Complementares</h3>
+            <div class="courses">
+              <div class="course">
+                <div class="course-header">
+                  <div class="course-info">
+                    <h4>Arduino</h4>
+                    <p>Arduino • 2021</p>
+                  </div>
+                  <a
+                    href="certificacoes/Certificado – Curso de Arduino – Nicolas Marrai.pdf"
+                    download="Curso de Arduino"
+                    type="application/pdf"
+                    class="btn-link course-download"
+                    >Baixar</a
+                  >
+                </div>
+              </div>
+              <div class="course">
+                <div class="course-header">
+                  <div class="course-info">
+                    <h4>Algoritmos e Lógica de Programação</h4>
+                    <p>Udemy • 2025</p>
+                  </div>
+                  <a
+                    href="certificacoes/Certificado - Algoritmos e Lógica de Programação.pdf"
+                    download="Algoritmos e Lógica de Programação"
+                    type="application/pdf"
+                    class="btn-link course-download"
+                    >Baixar</a
+                  >
+                </div>
+              </div>
+              <div class="course">
+                <div class="course-header">
+                  <div class="course-info">
+                    <h4>HTML5</h4>
+                    <br />
+                    <h4>CSS</h4>
+                    <p>Full Stack Club • 2026</p>
+                  </div>
+                  <div class="course-download-group">
+                    <a
+                      href="certificacoes/Certificado - HTML.pdf"
+                      download="HTML5"
+                      type="application/pdf"
+                      class="btn-link course-download"
+                      >Baixar</a
+                    >
+                    <a
+                      href="certificacoes/Certificado - CSS.pdf"
+                      download="CSS3"
+                      type="application/pdf"
+                      class="btn-link course-download"
+                      >Baixar</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="course">
+                <div class="course-header">
+                  <div class="course-info">
+                    <h4>MySQL para Desenvolvedores</h4>
+                    <p>Udemy • 2026</p>
+                  </div>
+                  <a
+                    href="certificacoes/Certificado - MySQL para Desenvolvedores - Básico ao Avançado.pdf"
+                    download="MySQL para Desenvolvedores"
+                    type="application/pdf"
+                    class="btn-link course-download"
+                    >Baixar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+      <div class="container">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Como me encontrar</h3>
+            <p><strong>Email:</strong> nicolasmarrai.dev@gmail.com</p>
+            <p><strong>Telefone:</strong> (63) 98464-8255</p>
+            <p><strong>Localização:</strong> Uberaba, MG, Brasil</p>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/nicolas-marrai-dev/"
+                target="_blank"
+                class="social-link"
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/NicolasMarrai"
+                target="_blank"
+                class="social-link"
+                >GitHub</a
+              >
+              <a
+                href="https://www.instagram.com/nicolas_marrai/"
+                target="_blank"
+                class="social-link"
+                >Instagram</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2026 Nicolas Marrai. Todos os direitos reservados.</p>
+          <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
